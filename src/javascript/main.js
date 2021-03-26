@@ -1,1 +1,2 @@
-console.log('starter')
+import 'normalize.css'
+import '../styles/common'
