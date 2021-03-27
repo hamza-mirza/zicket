@@ -5,6 +5,8 @@
 @import './base/colours';
 
 @import './layout/wrapper';
+@import './layout/page-section';
+@import './layout/_cols';
 
 @import './modules/typography/heading';
 @import './modules/typography/shallow-text';
@@ -13,3 +15,4 @@
 @import './modules/components/btn';
 
 @import './modules/blocks/hero';
+@import './modules/blocks/hiw';

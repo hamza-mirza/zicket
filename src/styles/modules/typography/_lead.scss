@@ -2,8 +2,12 @@
   font-size: $baseFontSize;
   line-height: 1.4;
   color: $c_grey;
-
+  font-weight: 400;
   &--white {
     color: $c_white;
+  }
+
+  &--extra-line-height {
+    line-height: 2;
   }
 }

@@ -1,0 +1,8 @@
+.two-col {
+  @include lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+    align-items: center;
+  }
+}

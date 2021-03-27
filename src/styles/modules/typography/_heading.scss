@@ -2,13 +2,13 @@
 // all styles follow the mobile-first approach.
 .heading {
   //general heading styles
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
   font-family: $title-font;
 
   @include md {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }

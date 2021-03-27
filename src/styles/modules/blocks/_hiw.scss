@@ -1,0 +1,74 @@
+.hiw {
+  overflow: hidden;
+  &__title {
+    span {
+      display: block;
+    }
+  }
+
+  &__section {
+    margin-bottom: 7rem;
+  }
+
+  &__section-title {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: $c_navy;
+    font-family: $title-font;
+
+    span {
+      position: absolute;
+      left: 0;
+      font-size: 5rem;
+      top: -2.4rem;
+      letter-spacing: 3px;
+      z-index: -1;
+      color: $c_blue;
+      opacity: 0.2;
+    }
+  }
+
+  &__header {
+    padding-bottom: 10rem;
+  }
+
+  &__section-img {
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  //targeting the 'two-col' class to change order of columns in this particular block on devices below 992px
+  .two-col {
+    &:nth-child(odd) {
+      display: flex;
+      flex-direction: column-reverse;
+      @include lg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20rem;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@include sm {
+  .hiw {
+    &__section-img {
+      img {
+        max-width: 37rem;
+      }
+    }
+  }
+}
+
+@include lg {
+  .hiw {
+    overflow: visible;
+    max-width: 100rem;
+    @include autoMargin;
+  }
+}
