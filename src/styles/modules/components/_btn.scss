@@ -2,7 +2,7 @@
   padding: 2rem 6rem;
   border-radius: 5rem;
   position: relative;
-
+  transition: color 0.2s;
   &:link,
   &:visited {
     color: $c_white;
@@ -10,6 +10,7 @@
   }
 
   &:hover {
+    background: rgba($c_pink, 0.9);
     &::before {
       padding: 0;
       border-color: transparent;
