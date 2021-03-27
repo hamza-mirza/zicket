@@ -1,11 +1,10 @@
 .hero {
   background: url('../../../assets/hero.jpg') center center no-repeat;
   background-size: cover;
-  height: 60vh;
+  padding: 30rem 0;
   position: relative;
 
   &__text-content {
-    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +14,7 @@
 
   &__title {
     font-size: 4.3rem;
-    line-height: 0.85;
+
     padding-bottom: 3rem;
   }
 
@@ -41,7 +40,7 @@
       margin-bottom: 2rem;
 
       text-align: center;
-      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.7693628476781338) 50%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
       @include autoMargin;
     }
   }
@@ -61,9 +60,11 @@
 
 @include md {
   .hero {
+    padding: 0;
     height: 100vh;
     &__title {
       font-size: 6.6rem;
+      line-height: 0.85;
     }
 
     &__text-content {
