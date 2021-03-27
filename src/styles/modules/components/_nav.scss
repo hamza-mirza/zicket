@@ -8,13 +8,6 @@
   padding: 4rem 0;
   overflow: hidden;
 
-  &__menu-trigger {
-    z-index: 100000000;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
   &__links {
     position: fixed;
     width: 100%;

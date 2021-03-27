@@ -1,0 +1,30 @@
+.menu-trigger {
+  z-index: 100000000;
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
+  height: 5rem;
+  width: 5rem;
+  background: $c_pink;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span {
+    height: 0.2rem;
+    width: 80%;
+    background: $c_white;
+    display: block;
+    margin: 0.3rem 0;
+  }
+}
+
+@include lg {
+  .menu-trigger {
+    display: none;
+  }
+}
