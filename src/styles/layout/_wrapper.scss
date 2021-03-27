@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 100%;
+
+  //SASS mixin that sets margin left & right to auto
+  @include autoMargin;
+
+  //SASS mixin breaks for standard breakpoints
+
+  @include sm {
+    max-width: 540px;
+  }
+
+  @include md {
+    max-width: 720px;
+  }
+
+  @include lg {
+    max-width: 960px;
+  }
+
+  @include xl {
+    max-width: 1140px;
+  }
+
+  @include xxl {
+    max-width: 1320px;
+  }
+}
