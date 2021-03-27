@@ -1,0 +1,46 @@
+.btn {
+  padding: 1.6rem 4rem;
+  border-radius: 5rem;
+  position: relative;
+
+  &:link,
+  &:visited {
+    color: $c_white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    &::before {
+      padding: 0;
+      border-color: transparent;
+      transition: padding 0.3s, border-color 0.3s;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 5rem;
+    padding: 0.4rem;
+    transition: padding 0.3s, border-color 0.3s;
+  }
+
+  &--pink {
+    background-color: $c_pink;
+    &::before {
+      border: solid 1.5px $c_pink;
+    }
+  }
+}
+
+@include md {
+  .btn {
+    padding: 2rem 6rem;
+  }
+}

@@ -2,5 +2,14 @@
 @import './base/fonts';
 @import './base/mixins';
 @import './base/global';
+@import './base/colours';
 
 @import './layout/wrapper';
+
+@import './modules/typography/heading';
+@import './modules/typography/shallow-text';
+@import './modules/typography/lead';
+
+@import './modules/components/btn';
+
+@import './modules/blocks/hero';

@@ -1,5 +1,9 @@
 //base settings: setting 1rem to eqaul 10px, font family, font weight and font size.
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }

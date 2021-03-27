@@ -1,0 +1,9 @@
+.lead {
+  font-size: $baseFontSize;
+  line-height: 1.4;
+  color: $c_grey;
+
+  &--white {
+    color: $c_white;
+  }
+}

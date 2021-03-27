@@ -1,0 +1,58 @@
+.hero {
+  background: url('../../../assets/hero.jpg') center center no-repeat;
+  background-size: cover;
+  height: 55vh;
+
+  &__text-content {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 4.3rem;
+    line-height: 0.85;
+    padding-bottom: 3rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 5rem;
+  }
+}
+
+@include sm {
+  .hero {
+    &__title {
+      font-size: 4.8rem;
+    }
+
+    &__subtitle {
+      width: 35rem;
+    }
+  }
+}
+
+@include md {
+  .hero {
+    height: 100vh;
+    &__title {
+      font-size: 6.6rem;
+    }
+
+    &__text-content {
+      height: 100vh;
+    }
+  }
+}
+
+@include lg {
+  .hero {
+    &__title {
+      font-size: 8rem;
+      max-width: 85rem;
+    }
+  }
+}

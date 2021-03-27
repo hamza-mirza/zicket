@@ -1,0 +1,12 @@
+.t-shallow {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.5px;
+
+  &--white {
+    -webkit-text-stroke-color: $c_white;
+  }
+
+  &--blue {
+    -webkit-text-stroke-color: $c_blue;
+  }
+}

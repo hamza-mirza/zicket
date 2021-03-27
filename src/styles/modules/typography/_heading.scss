@@ -1,0 +1,14 @@
+//reusable heading class for styling headers. Uses the BEM modifier '--' to target different variations.
+// all styles follow the mobile-first approach.
+.heading {
+  //general heading styles
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: $title-font;
+
+  @include md {
+    font-size: 4rem;
+  }
+}
