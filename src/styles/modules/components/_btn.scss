@@ -1,5 +1,5 @@
 .btn {
-  padding: 1.6rem 4rem;
+  padding: 2rem 6rem;
   border-radius: 5rem;
   position: relative;
 
@@ -37,10 +37,20 @@
       border: solid 1.5px $c_pink;
     }
   }
-}
 
-@include md {
-  .btn {
-    padding: 2rem 6rem;
+  &--has-arrow {
+    &::after {
+      content: '\279D';
+      position: absolute;
+      right: 2.5rem;
+      transition: right 0.2s;
+    }
+
+    &:hover {
+      &::after {
+        right: 3rem;
+        transition: right 0.2s;
+      }
+    }
   }
 }

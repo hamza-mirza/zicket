@@ -4,5 +4,5 @@
 
 ### Time logs
 
-- Friday, March 26 (10pm - 10:45pm): 45 minutes
-- Saturday, March 27 (11AM - ):
+- Friday, March 26: 45 minutes
+- Saturday, March 27:
