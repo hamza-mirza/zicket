@@ -53,4 +53,10 @@
       }
     }
   }
+
+  &--has-no-border {
+    &::before {
+      display: none;
+    }
+  }
 }

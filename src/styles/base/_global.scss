@@ -13,3 +13,8 @@ body {
   font-size: $baseFontSize;
   font-weight: $baseFontWeight;
 }
+
+//add this class to the body when the modal/mobile menu is active
+.pause-scroll {
+  overflow: hidden;
+}

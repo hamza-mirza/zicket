@@ -28,4 +28,14 @@
   @include xxl {
     max-width: 132rem;
   }
+
+  &--lg {
+    @include lg {
+      max-width: 96rem;
+    }
+
+    @include xl {
+      max-width: 152rem;
+    }
+  }
 }
