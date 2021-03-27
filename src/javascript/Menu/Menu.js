@@ -11,6 +11,7 @@ class Menu {
 
   handleToggleMenu() {
     this.menuList.classList.toggle('nav__links--visible')
+    this.trigger.classList.toggle('menu-trigger--active')
     document.body.classList.toggle('pause-scroll')
   }
 }

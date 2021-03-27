@@ -20,6 +20,25 @@
     background: $c_white;
     display: block;
     margin: 0.3rem 0;
+    transition: transform 0.2s;
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+
+  &--active {
+    background: transparent;
+
+    span {
+      transition: transform 0.2s;
+      &:first-of-type {
+        transform: rotate(45deg) translateY(0px) translateX(1px);
+      }
+      &:last-of-type {
+        transform: rotate(-45deg) translateY(-6px) translateX(5px);
+      }
+    }
   }
 }
 
