@@ -1,4 +1,5 @@
 //SASS mixins to define breakpoints
+// all breakpoints follow the mobile-first approach, hence the use of 'min-width'
 
 @mixin sm {
   @media (min-width: 576px) {

@@ -1,0 +1,11 @@
+//importing google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+//SASS variables for font families
+$title-font: 'Montserrat', Arial, Helvetica, sans-serif;
+$body-font: 'Open Sans', Arial, Helvetica, sans-serif;
+
+//SASS variables for font size and font weight
+$baseFontSize: 1.6rem; //equals to 16px
+$baseFontWeight: 300;

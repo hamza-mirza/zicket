@@ -1,0 +1,11 @@
+//base settings: setting 1rem to eqaul 10px, font family, font weight and font size.
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $body-font;
+  font-size: $baseFontSize;
+  font-weight: $baseFontWeight;
+}
