@@ -1,0 +1,49 @@
+//secondary button (used in 'how-it-works' section)
+
+.btn-sec {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: $title-font;
+  letter-spacing: 1px;
+
+  &:link,
+  &:visited {
+    color: $c_blue;
+    text-decoration: none;
+  }
+
+  span {
+    margin-left: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    background: $c_blue-light;
+    border-radius: 50%;
+    position: relative;
+    transition: background 0.2s, color 0.2s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border: solid 1px $c_blue;
+      height: 100%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      padding: 0.4rem;
+      transition: padding 0.3s, border-color 0.3s;
+    }
+  }
+
+  &:hover,
+  &:active {
+    span {
+      background: $c_blue;
+      color: $c_white;
+    }
+  }
+}
