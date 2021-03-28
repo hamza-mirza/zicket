@@ -5,11 +5,12 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+require('@babel/polyfill')
 
 module.exports = () => {
   return {
     entry: {
-      home: ['./src/javascript/main.js']
+      home: ['@babel/polyfill', './src/javascript/main.js']
     },
 
     output: {
