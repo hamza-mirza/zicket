@@ -58,6 +58,11 @@
           <div class="btn-wrapper">
             <a href="#" class="btn btn--has-arrow btn--pink">Get Started</a>
           </div>
+          <!-- video thumbnail -->
+          <button class="hero__thumbnail js_popup-trigger">
+            <img src="https://img.youtube.com/vi/fAJ0e7dGBfI/mqdefault.jpg" alt="Video thumbnail">
+          </button>
+          <!-- video thumbnail -->
         </div>
         <!-- hero section text-cotnent -->
 
@@ -68,23 +73,8 @@
           </p>
         </div>
         <!-- hero section text-cotnent -->
-      </div>
-      <!-- video thumbnail -->
-      <div class="popup">
-        <div class="wrapper">
-          <div class="popup__container">
-            <div class="popup__frame">
-              <iframe class="popup__video" src="https://www.youtube.com/embed/fAJ0e7dGBfI?enablejsapi=1" width="100%"
-                height="100%" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
 
       </div>
-      <div class="popup__overlay"></div>
-      <!-- video thumbnail -->
     </div>
     <!-- hero section -->
 
@@ -182,6 +172,26 @@
       </div>
     </section>
     <!-- how it works -->
+
+
+    <!-- video popup -->
+    <div class="popup js_popup">
+      <div class="wrapper">
+        <div class="popup__container">
+          <div class="popup__frame">
+            <iframe class="popup__video" src="https://www.youtube.com/embed/fAJ0e7dGBfI?enablejsapi=1" width="100%"
+              height="100%" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <button class="popup__close js_close-popup">&times;</button>
+        </div>
+      </div>
+    </div>
+    <!-- video popup -->
+    <!-- reusable overlay component -->
+    <div class="overlay js_overlay"></div>
+    <!-- reusable overlay component -->
 
   </main>
 
