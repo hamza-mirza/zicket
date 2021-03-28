@@ -75,7 +75,6 @@
 @include lg {
   .hiw {
     overflow: visible;
-    max-width: 100rem;
     @include autoMargin;
 
     &__section {

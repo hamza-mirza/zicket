@@ -4,6 +4,10 @@
 
   &--white {
     -webkit-text-stroke-color: $c_white;
+    span {
+      -webkit-text-stroke-width: 0px;
+      -webkit-text-fill-color: $c_white;
+    }
   }
 
   &--blue {

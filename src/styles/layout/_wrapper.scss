@@ -38,4 +38,10 @@
       max-width: 160rem;
     }
   }
+
+  &--sm {
+    @include xl {
+      max-width: 100rem;
+    }
+  }
 }
