@@ -14,11 +14,13 @@ class Popup {
   handleLaunchPopup() {
     this.popup.classList.add('popup--visible')
     this.overlay.classList.add('overlay--visible')
+    document.body.classList.add('pause-scroll')
   }
 
   handleClosePopup() {
     this.popup.classList.remove('popup--visible')
     this.overlay.classList.remove('overlay--visible')
+    document.body.classList.remove('pause-scroll')
   }
 }
 
