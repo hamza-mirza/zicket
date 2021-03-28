@@ -1,3 +1,182 @@
 .clients {
   background: $c_blue-purple-g;
+
+  &__btn-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 12rem;
+  }
+
+  &__title {
+    padding-bottom: 4rem;
+  }
+
+  &__cateogory,
+  &__client-name {
+    color: $c_white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+  }
+
+  &__client-name {
+    max-width: 70%;
+    line-height: 1.6;
+  }
+
+  &__carousel {
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      padding: 14rem 2rem 10rem 2rem;
+
+      .swiper-slide {
+        width: 70%;
+        height: auto;
+        margin-right: 1rem;
+        height: 45rem;
+        transition: transform 0.3s;
+        img {
+          max-width: 50%;
+        }
+
+        &-active {
+          transform: scaleY(1.06) translateY(-1.5rem);
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      .swiper-button-next {
+        right: auto;
+        top: 4rem;
+        left: 11rem;
+        color: $c_blue-light;
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($c_white, 0.2);
+        border-radius: 50%;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: solid 1px rgba($c_white, 0.2);
+          border-radius: 50%;
+          padding: 0.4rem;
+        }
+        &::after {
+          font-size: 2rem;
+        }
+      }
+
+      .swiper-button-prev {
+        right: auto;
+        top: 4rem;
+        left: 3rem;
+        color: $c_blue-light;
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($c_white, 0.2);
+        border-radius: 50%;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: solid 1px rgba($c_white, 0.2);
+          border-radius: 50%;
+          padding: 0.4rem;
+        }
+        &::after {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+@include sm {
+  .clients {
+    &__carousel {
+      .swiper-container {
+        .swiper-slide {
+          max-width: 37rem;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+  .clients {
+    .swiper-container {
+      padding: 14rem 2rem 10rem 2rem;
+
+      .swiper-button-next {
+        right: 22rem;
+        top: 4rem;
+        left: auto;
+      }
+
+      .swiper-button-prev {
+        right: 30rem;
+        top: 4rem;
+        left: auto;
+      }
+    }
+  }
+}
+
+@include lg {
+  .clients {
+    padding-top: 30rem;
+    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+    .swiper-container {
+      padding: 14rem 0 10rem 0;
+      .swiper-wrapper {
+        margin-left: -29rem;
+      }
+    }
+  }
+}
+
+@include xl {
+  .clients {
+    &__wrapper {
+      width: 100%;
+      margin: auto;
+    }
+
+    .swiper-container {
+      .swiper-wrapper {
+        margin-left: -40rem;
+      }
+    }
+  }
 }

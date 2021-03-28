@@ -60,4 +60,30 @@
       display: none;
     }
   }
+
+  &--light {
+    background-color: rgba($c_white, 0.2);
+    &::before {
+      border: solid 1.5px rgba($c_white, 0.2);
+    }
+    &:hover {
+      background-color: rgba($c_white, 0.3);
+    }
+  }
+
+  &--white {
+    background-color: $c_white;
+    &:link,
+    &:visited {
+      color: $c_blue;
+      text-decoration: none;
+    }
+    &::before {
+      border: solid 1.5px $c_white;
+    }
+    &:hover {
+      background-color: $c_blue;
+      color: $c_white;
+    }
+  }
 }

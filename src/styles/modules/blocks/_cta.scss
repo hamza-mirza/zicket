@@ -1,0 +1,18 @@
+.cta {
+  padding-top: 14rem;
+  text-align: center;
+
+  &__subtitle {
+    padding-bottom: 6rem;
+  }
+}
+
+@include lg {
+  .cta {
+    padding-top: 20rem;
+    &__subtitle {
+      max-width: 30rem;
+      @include autoMargin;
+    }
+  }
+}

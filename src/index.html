@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Zicket</title>
 </head>
 
@@ -79,7 +80,7 @@
     <!-- hero section -->
 
     <!-- how it works -->
-    <section class="page-section page-section--extra-b-padding">
+    <section class="page-section">
       <!-- hiw -> (how-it-works) -->
       <div class="hiw" id="how-it-works">
         <div class="wrapper wrapper--sm">
@@ -170,14 +171,118 @@
 
         </div>
       </div>
+
+
+
     </section>
     <!-- how it works -->
 
     <section class="page-section clients" id="our-clients">
       <div class="wrapper wrapper--sm">
-        <h2 class="heading t-shallow t-shallow--white">
+        <h2 class="clients__title heading t-shallow t-shallow--white">
           Our <span>Clients</span>
         </h2>
+      </div>
+      <div class="clients__carousel">
+        <div class="swiper-container js_clients-carousel">
+          <div class="swiper-wrapper">
+            <!-- individual slide -->
+            <div class="swiper-slide">
+              <p class="clients__cateogory">
+                Carnival
+              </p>
+              <div class="clients__slide" style="background-image: url(assets/carousel/aia-carnival.jpg);">
+                <img src="./assets/carousel/aia-carnival-logo.png" alt="The Aia Carnival">
+              </div>
+              <p class="clients__client-name">
+                AIA Carnival
+              </p>
+            </div>
+            <!-- individual slide -->
+
+            <!-- individual slide -->
+            <div class="swiper-slide">
+              <p class="clients__cateogory">
+                Carnival
+              </p>
+              <div class="clients__slide" style="background-image: url(assets/carousel/prudential-marina-bay.jpg);">
+                <img src="./assets/carousel/prudential-marina-bay-logo.png" alt="Prudential Marina Bay">
+              </div>
+              <p class="clients__client-name">
+                Prudential Marina Bay Carnival
+              </p>
+            </div>
+            <!-- individual slide -->
+
+            <!-- individual slide -->
+            <div class="swiper-slide">
+              <p class="clients__cateogory">
+                Circus
+              </p>
+              <div class="clients__slide"
+                style="background-image: url(assets/carousel/the-great-circus-of-europe.jpg);">
+                <img src="./assets/carousel/the-great-circus-of-europe-logo.png" alt="The Great Circus of Europe">
+              </div>
+              <p class="clients__client-name">
+                The Great Circus of Europe
+              </p>
+            </div>
+            <!-- individual slide -->
+
+            <!-- individual slide -->
+            <div class="swiper-slide">
+              <p class="clients__cateogory">
+                Carnival
+              </p>
+              <div class="clients__slide"
+                style="background-image: url(assets/carousel/hong-kong-overvation-wheel.jpg);">
+                <img src="./assets/carousel/hong-kong-overvation-wheel-logo.png" alt="Hong Kong Overvation Wheel">
+              </div>
+              <p class="clients__client-name">
+                Hong Kong Overvation Wheel
+              </p>
+            </div>
+            <!-- individual slide -->
+
+            <!-- individual slide -->
+            <div class="swiper-slide">
+              <p class="clients__cateogory">
+                Carnival
+              </p>
+              <div class="clients__slide" style="background-image: url(assets/carousel/summer-fun-carnival.jpg);">
+
+              </div>
+              <p class="clients__client-name">
+                Summer Fun Carnival
+              </p>
+            </div>
+            <!-- individual slide -->
+
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next js_clients-carousel-next"></div>
+          <div class="swiper-button-prev js_clients-carousel-prev"></div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="btn-wrapper clients__btn-wrapper">
+          <a href="#" class="btn btn--has-arrow btn--light">View All Clients</a>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <section class="cta" id="cta">
+          <h3 class="clients__title heading t-shallow t-shallow--white">
+            Try Zicket <span>Today</span>
+          </h3>
+          <p class="cta__subtitle lead lead--white lead--extra-line-height">Join thousands of other events planners and
+            start
+            selling tickets
+            to your events.</p>
+          <div class="btn-wrapper">
+            <a href="#" class="btn btn--has-arrow btn--white">Sign Up</a>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -203,6 +308,7 @@
 
   </main>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
