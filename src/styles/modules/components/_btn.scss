@@ -9,6 +9,9 @@
   position: relative;
   transition: color 0.2s;
   cursor: pointer;
+  &:focus {
+    outline: transparent;
+  }
   &:link,
   &:visited {
     color: $c_white;
