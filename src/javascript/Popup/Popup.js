@@ -4,6 +4,7 @@ class Popup {
     this.popup = document.querySelector('.js_popup')
     this.overlay = document.querySelector('.js_overlay')
     this.popupClose = document.querySelector('.js_close-popup')
+    this.video = document.querySelector('.js_video')
     this.events()
   }
   events() {
@@ -20,6 +21,7 @@ class Popup {
   handleClosePopup() {
     this.popup.classList.remove('popup--visible')
     this.overlay.classList.remove('overlay--visible')
+    this.video.setAttribute('src', this.video.getAttribute('src'))
     document.body.classList.remove('pause-scroll')
   }
 }
