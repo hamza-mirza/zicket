@@ -1,0 +1,48 @@
+.nltr {
+  background-color: $c_blue-dark;
+
+  &__title {
+    color: $c_white;
+    font-weight: 300;
+    font-size: 2.5rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__form {
+    .input {
+      width: 100%;
+      margin-bottom: 4rem;
+      margin-top: 6rem;
+    }
+  }
+}
+
+@include lg {
+  .nltr {
+    &__subtitle {
+      max-width: 25rem;
+    }
+    &__content {
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+    &__form {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      .input {
+        flex: 1 0 0;
+        width: 100%;
+        margin-right: 6rem;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}

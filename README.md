@@ -36,6 +36,7 @@ This is the link to the landing page. Directly linked to the master branch and u
 
 ##### Structure
 
+- While this page could easily be designed Desktop first, I wanted to stick to what I find preferable and for that reason, I've built this page to be mobile-first.
 - I've used SASS for styling and plain JavaScript for making changes to the DOM.
 - My primary objective was to keep everything modular, and for that reason, I took the atomic design approach and broke everything down into smaller chunks
 - The CSS has been split into three different folders - `base`, `layout` and `modules`.

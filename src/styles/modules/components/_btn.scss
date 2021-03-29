@@ -3,9 +3,12 @@
 // e.g '--white' set the background colour and outline to white
 .btn {
   padding: 2rem 6rem;
+  border: 0;
+  background: transparent;
   border-radius: 5rem;
   position: relative;
   transition: color 0.2s;
+  cursor: pointer;
   &:link,
   &:visited {
     color: $c_white;
@@ -88,6 +91,23 @@
     }
     &:hover {
       background-color: $c_blue;
+      color: $c_white;
+    }
+  }
+
+  &--blue {
+    background-color: $c_blue;
+    color: $c_white;
+    &:link,
+    &:visited {
+      color: $c_white;
+      text-decoration: none;
+    }
+    &::before {
+      border: solid 1.5px $c_blue;
+    }
+    &:hover {
+      background-color: $c_pink;
       color: $c_white;
     }
   }
