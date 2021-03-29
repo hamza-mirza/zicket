@@ -1,5 +1,26 @@
-//SASS mixin to center content
+//SASS mixin to set margin to auto for left and right
 @mixin autoMargin {
   margin-left: auto;
   margin-right: auto;
+}
+
+//SASS mixin to center absolute positioned elements
+@mixin centerAbsolute {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//SASS mixin to center align using flexbox
+@mixin centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//SASS mixin to adjust background image
+@mixin adjustBg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

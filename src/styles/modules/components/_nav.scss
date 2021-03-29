@@ -17,9 +17,7 @@
     visibility: hidden;
     background: linear-gradient(270deg, $c_blue, $c_purple);
     z-index: 9000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerFlex;
     transition: left 0.3s, visibility 0.3s;
     &--visible {
       left: 0;

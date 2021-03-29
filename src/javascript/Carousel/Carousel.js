@@ -19,8 +19,7 @@ const clientsCarousel = new Swiper('.js_clients-carousel', {
       slidesPerView: 'auto'
     },
     999: {
-      centeredSlides: true,
-      slidesPerView: 'auto'
+      centeredSlides: true
     }
   }
 })

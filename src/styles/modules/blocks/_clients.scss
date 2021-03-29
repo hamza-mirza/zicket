@@ -1,4 +1,5 @@
 .clients {
+  //setting the background colour to the blue-purple gradient
   background: $c_blue-purple-g;
 
   &__btn-wrapper {
@@ -24,6 +25,7 @@
     line-height: 1.6;
   }
 
+  //carousel and swiper styles
   &__carousel {
     .swiper-container {
       width: 100%;
@@ -47,17 +49,15 @@
           margin-right: 0;
         }
       }
-
+      //styling and positing the 'previous slide' button
       .swiper-button-next {
         right: auto;
-        top: 4rem;
+        top: 2rem;
         left: 11rem;
         color: $c_blue-light;
         height: 6rem;
         width: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerFlex;
         background-color: rgba($c_white, 0.2);
         border-radius: 50%;
         &::before {
@@ -65,9 +65,7 @@
           position: absolute;
           height: 100%;
           width: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          @include centerAbsolute;
           border: solid 1px rgba($c_white, 0.2);
           border-radius: 50%;
           padding: 0.4rem;
@@ -77,16 +75,15 @@
         }
       }
 
+      //styling and positing the 'previous slide' button
       .swiper-button-prev {
         right: auto;
-        top: 4rem;
+        top: 2rem;
         left: 3rem;
         color: $c_blue-light;
         height: 6rem;
         width: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerFlex;
         background-color: rgba($c_white, 0.2);
         border-radius: 50%;
         &::before {
@@ -94,9 +91,7 @@
           position: absolute;
           height: 100%;
           width: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          @include centerAbsolute;
           border: solid 1px rgba($c_white, 0.2);
           border-radius: 50%;
           padding: 0.4rem;
@@ -108,19 +103,17 @@
     }
   }
 
+  //styling the individual slide
   &__slide {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include adjustBg;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerFlex;
     border-radius: 5px;
     text-align: center;
   }
 }
 
+//styles for screens above 576px
 @include sm {
   .clients {
     &__carousel {
@@ -133,6 +126,7 @@
   }
 }
 
+//styles for screens above 768px
 @include md {
   .clients {
     .swiper-container {
@@ -140,23 +134,24 @@
 
       .swiper-button-next {
         right: 22rem;
-        top: 4rem;
+        top: 2rem;
         left: auto;
       }
 
       .swiper-button-prev {
         right: 30rem;
-        top: 4rem;
+        top: 2rem;
         left: auto;
       }
     }
   }
 }
 
+//styles for screens above 992px
 @include lg {
   .clients {
     padding-top: 30rem;
-    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
     .swiper-container {
       padding: 14rem 0 10rem 0;
       .swiper-wrapper {
@@ -166,6 +161,7 @@
   }
 }
 
+//styles for screens above 1200px
 @include xl {
   .clients {
     &__wrapper {

@@ -44,9 +44,7 @@
     width: 6rem;
     color: $c_white;
     font-weight: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerFlex;
     border-radius: 50%;
     cursor: pointer;
     &:focus {
@@ -59,9 +57,7 @@
       width: 100%;
       position: absolute;
       border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      @include centerAbsolute;
       border: solid 1px $c_pink;
       padding: 0.5rem;
     }

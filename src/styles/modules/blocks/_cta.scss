@@ -1,3 +1,4 @@
+//styles for the 'try zicket today' section
 .cta {
   padding-top: 14rem;
   text-align: center;
@@ -7,11 +8,13 @@
   }
 }
 
+//styles for screens above 992px
 @include lg {
   .cta {
     padding-top: 20rem;
     &__subtitle {
       max-width: 30rem;
+      //mixin: margin: 0 auto;
       @include autoMargin;
     }
   }

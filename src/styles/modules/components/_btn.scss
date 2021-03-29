@@ -1,3 +1,6 @@
+//standard button styles
+// '--' represent different variations
+// e.g '--white' set the background colour and outline to white
 .btn {
   padding: 2rem 6rem;
   border-radius: 5rem;
@@ -39,6 +42,7 @@
     }
   }
 
+  // use this class when the button needs to contain an arrow sign
   &--has-arrow {
     &::after {
       content: '\279D';
@@ -55,6 +59,7 @@
     }
   }
 
+  // use this class when the buttons doesn't need an outline
   &--has-no-border {
     &::before {
       display: none;
